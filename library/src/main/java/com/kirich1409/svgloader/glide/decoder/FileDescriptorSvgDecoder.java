@@ -37,7 +37,12 @@ public final class FileDescriptorSvgDecoder extends SvgDecoder<FileDescriptor> {
         try {
             return SvgUtils.getSvg(source);
         } catch (IOException e) {
-            throw new SVGParseException(e);
+            try {
+                throw new Exception(e);
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+            return null;
         }
     }
 

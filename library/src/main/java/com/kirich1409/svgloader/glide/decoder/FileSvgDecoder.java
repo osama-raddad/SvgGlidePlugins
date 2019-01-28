@@ -32,11 +32,11 @@ public final class FileSvgDecoder extends SvgDecoder<File> {
 
     @Override
     SVG loadSvg(@NonNull File source, int width, int height, @NonNull Options options)
-            throws SVGParseException {
+            throws Exception {
         try {
             return SvgUtils.getSvg(source);
         } catch (IOException e) {
-            throw new SVGParseException(e);
+                throw new Exception(e);
         }
     }
 

@@ -34,11 +34,11 @@ public final class ByteBufferSvgDecoder extends SvgDecoder<ByteBuffer> {
 
     @Override
     SVG loadSvg(ByteBuffer source, int width, int height, @NonNull Options options)
-            throws SVGParseException {
+            throws Exception {
         try (InputStream is = ByteBufferUtil.toStream(source)) {
             return SVG.getFromInputStream(is);
-        } catch (IOException e) {
-            throw new SVGParseException(e);
+        } catch (Exception e) {
+            throw new Exception(e);
         }
     }
 
