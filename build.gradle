@@ -48,5 +48,5 @@ ext {
 
     glideVersion = '4.8.0'
 
-    versionName = '1.0.0'
+    versionName = '1.0.1'
 }

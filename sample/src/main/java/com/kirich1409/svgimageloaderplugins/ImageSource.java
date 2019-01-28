@@ -21,8 +21,8 @@ import android.support.annotation.NonNull;
 
 public enum ImageSource {
 
-    NETWORK_STRING_URL("http://thenewcode.com/assets/images/thumbnails/homer-simpson.svg"),
-    NETWORK_URI(Uri.parse("http://thenewcode.com/assets/images/thumbnails/homer-simpson.svg")),
+    NETWORK_STRING_URL("https://weather-statuses.devops.arabiaweather.com/maater-app/andriod/n8p.svg"),
+    NETWORK_URI(Uri.parse("https://weather-statuses.devops.arabiaweather.com/maater-app/andriod/n8.svg")),
     RAW_RESOURCE(R.raw.bart_simpson),
     ASSETS_URI(Uri.parse("file:///android_asset/marge_simpson.svg")),
     STRING("<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n" +
